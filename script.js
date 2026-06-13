@@ -1,17 +1,23 @@
-function showWeather(){
+const products = [
+    {name: "Laptop", category: "Electronics"},
+    {name: "Phone", category: "Electronics"},
+    {name: "Shirt", category: "Fashion"}
+];
 
-    let city =
-    document.getElementById("city").value;
+function showElectronics() {
 
     let result =
-    document.getElementById("result");
+    products.filter(
+        item => item.category === "Electronics"
+    );
 
-    if(city === ""){
-        result.innerHTML =
-        "Please enter a city name";
-    }
-    else{
-        result.innerHTML =
-        "Weather information for " + city;
-    }
+    let list =
+    document.getElementById("products");
+
+    list.innerHTML = "";
+
+    result.forEach(item => {
+        list.innerHTML +=
+        `<li>${item.name}</li>`;
+    });
 }
