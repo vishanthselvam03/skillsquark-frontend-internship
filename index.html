@@ -1,46 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vishanth S S Portfolio</title>
+    <title>Weather Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Vishanth S S</h1>
-        <p>B.Tech Artificial Intelligence and Data Science (AIDS)</p>
-    </header>
+    <div class="container">
+        <h1>Weather Dashboard</h1>
 
-    <section>
-        <h2>About Me</h2>
-        <p>
-            I am an Artificial Intelligence and Data Science student
-            passionate about programming, web development, and technology.
-        </p>
-    </section>
+        <input type="text" id="city" placeholder="Enter City Name">
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Python</li>
-            <li>JavaScript</li>
-        </ul>
-    </section>
+        <button onclick="showWeather()">Search</button>
 
-    <section>
-        <h2>Education</h2>
-        <p>B.Tech - Artificial Intelligence and Data Science (AIDS)</p>
-    </section>
+        <div id="result"></div>
+    </div>
 
-    <section>
-        <h2>Contact</h2>
-        <p>Email: vishanth@example.com</p>
-        <p>Phone: 9876543210</p>
-    </section>
+    <script src="script.js"></script>
 
 </body>
 </html>
